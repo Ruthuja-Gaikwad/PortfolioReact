@@ -14,11 +14,6 @@ const Footer = () => {
               {portfolioData.email}
             </a>
           </p>
-          <p>
-            <a href={`tel:${portfolioData.phone}`} className="footer-link">
-              {portfolioData.phone}
-            </a>
-          </p>
         </div>
         <div className="footer-social">
           <SocialLinks />
