@@ -80,7 +80,7 @@ export const portfolioData = {
       {
         name: "Database Management System",
         issuer: "NPTEL",
-        link: "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS21S55740003930008927",
+        link: "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS21S65740025630149821",
         date: "Mar 2024"
       }
     ],
