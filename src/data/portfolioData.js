@@ -4,7 +4,7 @@ export const portfolioData = {
     phone: "+91-7386117471",
     github: "https://github.com/Ruthuja-Gaikwad",
     linkedin: "https://www.linkedin.com/in/ruthuja-gaikwad",
-    portfolio: "",
+    portfolio: "https://portfolio-ruthuja.vercel.app/",
     
     summary: "Passionate and driven Computer Science undergraduate with a strong interest in solving real-world problems through technology. Experienced in developing and contributing to a wide range of projects, including Android applications and full-stack web platforms. Thrives in collaborative, fast-paced environments and excels at tackling challenging tasks that enhance both technical and analytical skills. Backed by a solid academic foundation, research exposure, and active participation in national-level hackathons. Seeking an internship opportunity to apply and expand my skills in programming, software development, and AI/ML, while making meaningful contributions to a dynamic team.",
     
