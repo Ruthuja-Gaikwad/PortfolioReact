@@ -1,0 +1,66 @@
+:root {
+    /* Light Theme */
+    --bg-primary: #f1faee;
+    --bg-secondary: #ffffff;
+    --text-primary: #1d3557;
+    --text-secondary: #457b9d;
+    --accent-primary: #e63946;
+    --accent-secondary: #a7d0e4;
+    --accent-tertiary: #f8c8dc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  [data-theme="dark"] {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #ffffff;
+    --text-secondary: #d2e9f4;
+    --accent-primary: #e94560;
+    --accent-secondary: #a3c6f1;
+    --accent-tertiary: #533483;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .glass-card {
+    background: rgba(var(--bg-secondary-rgb), 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, var(--accent-primary), var(--accent-tertiary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-shift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+  
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* theme.css */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.theme-toggle .icon {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}

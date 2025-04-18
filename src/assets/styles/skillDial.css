@@ -1,0 +1,44 @@
+.skill-dial {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  .skill-dial-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .skill-dial-bg {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  
+  .skill-dial-fill {
+    fill: none;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+  }
+  
+  .skill-dial-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .skill-dial-percent {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+  }
+  
+  .skill-dial-name {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }

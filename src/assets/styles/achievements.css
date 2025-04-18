@@ -1,0 +1,98 @@
+.achievements-section {
+  background-color: var(--bg-primary);
+  padding: 100px 20px;
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.achievements-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.achievements-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-secondary);
+  border-radius: 2px;
+}
+
+.achievement-item,
+.certification-item,
+.extracurricular-item {
+  position: relative;
+  padding-left: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 12px 15px 12px 30px;
+  box-shadow: 0 2px 6px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover,
+.certification-item:hover,
+.extracurricular-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-item::before,
+.extracurricular-item::before {
+  content: '★';
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: var(--accent-primary);
+  font-size: 1.1rem;
+}
+
+.certification-item::before {
+  content: '✓';
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: var(--accent-secondary);
+  font-size: 1.1rem;
+}
+
+.certification-item a {
+  color: var(--accent-secondary);
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.certification-item a:hover {
+  color: var(--accent-primary);
+}
+
+.extracurricular {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .achievements-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

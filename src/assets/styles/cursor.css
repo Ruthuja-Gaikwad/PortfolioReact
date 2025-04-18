@@ -1,0 +1,32 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cursor--hidden {
+    opacity: 0;
+  }
+  
+  .cursor--clicked {
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: var(--accent-tertiary);
+  }
+  
+  .cursor--link-hovered {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(230, 57, 70, 0.5);
+  }
+  
+  @media (pointer: coarse) {
+    .cursor {
+      display: none;
+    }
+  }
